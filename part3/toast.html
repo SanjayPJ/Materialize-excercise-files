@@ -69,6 +69,10 @@
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Hi<i class="material-icons right">arrow_drop_down</i></a></li>
     </ul>
     <div class="container" style="margin-top: 30px">
+        <a onclick="M.toast({html: 'I am a toast'})" class="btn">Toast!</a>
+        <a onclick="M.toast({html: 'I am a toast',classes: 'rounded'})" class="btn">Toast!</a>
+        <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Hover me!</a>
+
     </div>
     <div class="container" style="height: 200vh">
 
@@ -76,6 +80,9 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
+        $(document).ready(function () {
+            $('.tooltipped').tooltip();
+        });
     </script>
 </body>
 
